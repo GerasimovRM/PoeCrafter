@@ -8,7 +8,7 @@ class Tab:
 
     @staticmethod
     def load_cells(tab_type: TabType):
-        if tab_type == TabType.SMALL:
-            ...  # TODO
+        if tab_type == TabType.INVENTORY:
+            ...
         else:
             raise TypeError("Unrecognized tab type")

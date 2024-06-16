@@ -44,5 +44,5 @@ class Window:
                                                                        move_duration_dispersion))
 
     @staticmethod
-    def enter_text_using_keyboard(text: str, interval: float = 0.1, dispersion: float = 0.1):
+    def enter_text_using_keyboard(text: str, interval: float = 0.15, dispersion: float = 0.1):
         pyautogui.write(text, interval + random.uniform(-dispersion, dispersion))

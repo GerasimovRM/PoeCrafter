@@ -46,3 +46,12 @@ class Window:
     @staticmethod
     def enter_text_using_keyboard(text: str, interval: float = 0.15, dispersion: float = 0.1):
         pyautogui.write(text, interval + random.uniform(-dispersion, dispersion))
+
+    @staticmethod
+    def move_from__to__(*args):
+        Window.move_to_position(args[0])
+        pyautogui.mouseDown(button='left')
+        Window.move_to_position(args[1])
+        pyautogui.mouseUp(button='left')
+
+
